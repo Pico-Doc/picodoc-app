@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pico Doc · Documenti scansionati in PDF leggerissimi</title>
+<meta name="description" content="Pico Doc scansiona carta d'identità, patente e pratiche in PDF di poche decine di KB. Restano sul tuo telefono, cifrati, e ti avvisa prima che scadano.">
+<meta name="theme-color" content="#0f6e6a">
+<link rel="icon" href="icona.svg" type="image/svg+xml">
+<link rel="preload" href="font/bricolage-grotesque.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="stile.css">
+</head>
+<body>
+
+<header class="colonna testata">
+  <a class="marchio" href="./"><img src="icona.svg" alt="" width="34" height="34">Pico Doc</a>
+  <select class="lingua" id="lingua" aria-label="Lingua / Language">
+    <option value="it">Italiano</option>
+    <option value="en">English</option>
+    <option value="fr">Français</option>
+    <option value="de">Deutsch</option>
+    <option value="es">Español</option>
+  </select>
+</header>
+
+<main>
+  <section class="colonna apertura">
+    <div>
+      <h1 class="titolo">
+        <span class="grande" data-t="titolo_grande">Documenti grandi così.</span>
+        <span class="piccolo" data-t="titolo_piccolo">File piccoli così.</span>
+      </h1>
+      <p class="sommario" data-t="sommario">Pico Doc scansiona carta d'identità, patente e pratiche e le trasforma in PDF di poche decine di KB. Restano sul tuo telefono, cifrati, e ti avvisa prima che scadano.</p>
+      <div class="negozi">
+        <a class="negozio" id="play" aria-disabled="true"><small data-t="presto">In arrivo su</small><b>Google Play</b></a>
+        <a class="negozio" id="apple" aria-disabled="true"><small data-t="presto">In arrivo su</small><b>App Store</b></a>
+      </div>
+    </div>
+
+    <!-- Riproduzione disegnata della schermata principale dell'app -->
+    <div class="telefono" role="img" data-t-aria="telefono_alt" aria-label="La schermata principale di Pico Doc: i documenti come carte sovrapposte">
+      <div class="schermo" aria-hidden="true">
+        <div class="barra"><span>Pico Doc</span><svg viewBox="0 0 24 24"><path d="M19.4 13a7.5 7.5 0 0 0 0-2l2-1.6-2-3.4-2.4 1a7.6 7.6 0 0 0-1.7-1L15 3.5h-4l-.3 2.5a7.6 7.6 0 0 0-1.7 1l-2.4-1-2 3.400 2 1.600a7.500 7.500 0 0 0 0 2l-2 1.600 2 3.400 2.400-1a7.600 7.600 0 0 0 1.700 1l.3 2.500h4l.3-2.500a7.600 7.600 0 0 0 1.700-1l2.400 1 2-3.400zM13 15a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/></svg></div>
+        <div class="categoria" data-t="categoria">Documenti d'identità</div>
+        <div class="pila">
+          <div class="tessera"><span class="tipo" data-t="passaporto">Passaporto</span><span class="nome" data-t="passaporto">Passaporto</span></div>
+          <div class="tessera"><span class="tipo" data-t="patente">Patente di guida</span><span class="nome" data-t="patente">Patente di guida</span></div>
+          <div class="tessera"><span class="tipo" data-t="carta">Carta d'identità</span><span class="nome" data-t="carta">Carta d'identità</span>
+            <div class="piede"><span data-t="carta_peso">2 pagine · 86 KB</span><span class="pillola" data-t="carta_scade">Scade tra 12 giorni</span></div></div>
+        </div>
+        <div class="categoria" data-t="categoria2">Documenti e pratiche</div>
+        <div class="pila corta">
+          <div class="tessera"><span class="tipo" data-t="visura">Visura camerale</span><span class="nome" data-t="visura">Visura camerale</span>
+            <div class="piede"><span data-t="visura_peso">3 pagine · 124 KB</span></div></div>
+        </div>
+        <div class="scansiona"><span>+</span><span data-t="scansiona">Scansiona</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="peso" id="peso">
+    <div class="colonna">
+      <h2 data-t="peso_titolo">La stessa carta d'identità, fronte e retro.</h2>
+      <div class="bilancia">
+        <div class="riga-peso foto"><span class="chi" data-t="peso_foto">Due foto del telefono</span><div class="barra-peso"><i></i><span class="quanto">4,2 MB</span></div></div>
+        <div class="riga-peso pdf"><span class="chi" data-t="peso_pdf">Il PDF di Pico Doc</span><div class="barra-peso"><i></i><span class="quanto">86 KB</span></div></div>
+      </div>
+      <p class="nota" data-t="peso_nota">Un esempio tipico: il peso reale dipende dal documento. L'app te lo mostra dopo ogni scansione.</p>
+    </div>
+  </section>
+
+  <div class="colonna funzioni">
+    <section class="funzione">
+      <div>
+        <h2 data-t="f1_titolo">Inquadri, e il resto lo fa lui</h2>
+        <p data-t="f1_testo">Pico Doc trova i bordi, raddrizza il foglio, lo mette nel verso giusto e ti avvisa se la foto è venuta mossa. Per i documenti a due facciate ti guida: prima il fronte, poi il retro.</p>
+      </div>
+      <div class="figura" aria-hidden="true">
+        <span class="passo" data-t="f1_passo">Passo 2 di 2</span>
+        <div class="due-lati"><div class="lato fatto">✓</div><div class="lato adesso" data-t="retro">Retro</div></div>
+      </div>
+    </section>
+
+    <section class="funzione rovescia">
+      <div>
+        <h2 data-t="f2_titolo">Ti avvisa prima che scada</h2>
+        <p data-t="f2_testo">Legge la data di scadenza direttamente dal documento e ti manda un promemoria per tempo. Per la carta d'identità: 90, 30 e 7 giorni prima.</p>
+      </div>
+      <div class="figura" aria-hidden="true">
+        <div class="avviso"><img src="icona.svg" alt=""><b data-t="f2_avviso">Carta d'identità scade tra 30 giorni</b><span data-t="f2_tocca">Tocca per vederla</span></div>
+        <div class="giorni"><b>90</b><b>30</b><b>7</b><span data-t="f2_giorni">giorni prima</span></div>
+      </div>
+    </section>
+
+    <section class="solo-testo">
+      <h2 data-t="f3_titolo">Restano sul tuo telefono</h2>
+      <ul>
+        <li data-t="f3_a">Cifrati, con una chiave che non esce dal dispositivo.</li>
+        <li data-t="f3_b">Nessun account e nessuna registrazione per iniziare.</li>
+        <li data-t="f3_c">Niente screenshot e niente anteprime tra le app recenti.</li>
+        <li data-t="f3_d">Fuori dai backup automatici.</li>
+        <li data-t="f3_e">Un documento eliminato per sbaglio si recupera per 30 giorni.</li>
+        <li data-t="f3_f">Nessuna profilazione: gli annunci non sono personalizzati.</li>
+      </ul>
+    </section>
+
+    <section class="funzione">
+      <div>
+        <h2 data-t="f4_titolo">Al tuo professionista, con un codice</h2>
+        <p data-t="f4_testo">Se il tuo commercialista o un altro professionista usa un programma compatibile, inserisci il codice che ti dà e gli invii i documenti dall'app, senza email e senza chat. Decidi tu cosa mandare e quando. È un componente aggiuntivo a pagamento, una tantum.</p>
+      </div>
+      <div class="figura" aria-hidden="true">
+        <div class="codice"><span>K</span><span>7</span><span>M</span><span>2</span><span>P</span><span>9</span><span>Q</span><span>X</span></div>
+        <div class="collega" data-t="f4_collega">Collega</div>
+      </div>
+    </section>
+  </div>
+
+  <section class="colonna breve">
+    <dl>
+      <div><dt data-t="b1_t">Gratis, con un solo banner</dt><dd data-t="b1_d">Nella schermata principale, mai accanto a un documento. Annunci non personalizzati. Si toglie per sempre con un acquisto una tantum.</dd></div>
+      <div><dt data-t="b2_t">Si condivide con tutto</dt><dd data-t="b2_d">Uno o più PDF verso email, messaggi o qualsiasi altra app.</dd></div>
+      <div><dt data-t="b3_t">Cinque lingue</dt><dd data-t="b3_d">Italiano, inglese, francese, tedesco e spagnolo: segue la lingua del telefono.</dd></div>
+    </dl>
+  </section>
+</main>
+
+<footer class="piede-pagina">
+  <div class="colonna">
+    <span><span data-t="firma_a">Ideata con</span> <span class="cuore">❤</span> <span data-t="firma_b">da Guido</span></span>
+    <nav>
+      <a href="privacy.html" data-t="privacy">Privacy</a>
+      <a href="elimina-account.html" data-t="elimina">Eliminare l'account</a>
+      <a href="mailto:pico.doc.app@gmail.com">pico.doc.app@gmail.com</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="testi.js"></script>
+</body>
+</html>
