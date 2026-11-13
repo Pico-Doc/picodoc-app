@@ -1,6 +1,6 @@
 # Sito di Pico Doc — istruzioni di lavoro
 
-Sito pubblico dell'app Pico Doc, pubblicato con GitHub Pages dal ramo `main`: **https://pico-doc.github.io/**
+Sito pubblico dell'app Pico Doc, pubblicato con GitHub Pages dal ramo `main`: **https://pico-doc.com/** (dominio su Register.it; il file `CNAME` lo collega: non toccarlo. Il vecchio pico-doc.github.io reindirizza qui)
 Il repository è pubblico: qui stanno solo le pagine del sito. Il codice dell'app è altrove, in un repository privato.
 
 - Rispondere al proprietario in italiano, senza gergo tecnico.
